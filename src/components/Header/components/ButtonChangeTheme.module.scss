@@ -1,0 +1,14 @@
+.changeTheme{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    .text {
+		font-weight: var(--heavy);
+		font-size: var(--f16);
+		text-transform: capitalize;
+		color: var(--font-color);
+	}
+	svg{
+		color: var(--font-color);
+	}
+}

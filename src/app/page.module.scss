@@ -1,0 +1,10 @@
+.main {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  width: 100%;
+  .content{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

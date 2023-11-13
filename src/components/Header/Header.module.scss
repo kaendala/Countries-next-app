@@ -1,0 +1,30 @@
+.header {
+  background-color: var(--second-background-color);
+  height: 68px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow:  0 -3px 6px var(--gray);
+  font-weight: var(--heavy);
+  font-size: 19px;
+  color: var(--font-color);
+}
+
+.button {
+  position: absolute;
+  right: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: var(--f16);
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 20px;
+  }
+  .button {
+    right: 20px;
+  }
+}
