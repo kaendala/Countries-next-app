@@ -11,4 +11,12 @@
 	svg{
 		color: var(--font-color);
 	}
+	
+}
+@media (max-width: 480px) {
+	.changeTheme {
+		.text {
+			font-size: var(--f14);
+		}
+	}
 }

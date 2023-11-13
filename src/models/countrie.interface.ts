@@ -4,7 +4,7 @@ export interface Country {
   capital: string[];
   region: string;
   population: number;
-  cca3: number;
+  cca3: string;
 }
 
 interface Name {

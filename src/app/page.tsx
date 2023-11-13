@@ -1,5 +1,4 @@
 import CountriesList from '@/components/CountriesList/CountriesList';
-import Header from '@/components/Header/Header';
 import s from './page.module.scss';
 
 
@@ -10,8 +9,7 @@ export default async function Home() {
   ).then((res) => res.json());
 
   return (
-    <main className={`${s.main} light`}>
-      <Header></Header>
+    <main className={s.main}>
       <div className={s.content}>
         {list?.length>0 &&<CountriesList list={list}></CountriesList>}
       </div>

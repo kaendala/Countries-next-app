@@ -1,6 +1,7 @@
 'use client'
+import { useCountriesContext } from '@/context/CountriesContext/CountriesContext';
 import { Country } from '@/models/countrie.interface';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import DropDown from '../DropDown/DropDown';
 import Search from '../Search/Search';
@@ -11,6 +12,12 @@ type CountriesListProps = {
 };
  const CountriesList=({list}:CountriesListProps)=> {
      const [listFilter, setListFilter] = useState<Country[]>([...list]);
+     const { updateList } = useCountriesContext()
+    
+    useEffect(()=>{
+            updateList(list)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
     return (
         <>
         <div className={s.search}>

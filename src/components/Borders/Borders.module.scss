@@ -1,0 +1,12 @@
+.borders{
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    .name{
+        border-radius: 4px;
+        background-color: var(--second-background-color);
+        box-shadow: 0 0 3px 0px var(--gray);
+        padding: 4px 0.5rem;
+        font-weight: var(--light);
+    }
+}

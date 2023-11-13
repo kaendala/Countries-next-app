@@ -1,11 +1,11 @@
 'use client';
-import { Countrie } from '@/models/countrie.interface';
+import { Country } from '@/models/countrie.interface';
 import Image from 'next/image';
 import Link from 'next/link';
 import s from './Card.module.scss';
 
 type Cardprops = {
-  info: Countrie;
+  info: Country;
 };
 const Card = ({ info }: Cardprops) => {
   return (
@@ -22,7 +22,7 @@ const Card = ({ info }: Cardprops) => {
           <p className={s.name}>{info.name?.common}</p>
           <div className={s.info}>
             <p>
-              <span>Population:</span> {info.population?.toLocaleString()}
+              <span>Population:</span> {info.population?.toLocaleString('en-US')}
             </p>
             <p>
               <span>Region:</span> {info.region}

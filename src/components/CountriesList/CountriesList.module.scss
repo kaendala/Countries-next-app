@@ -10,5 +10,14 @@
     margin: 0 auto;
     display: flex;
     position: relative;
-    margin-top: 2rem;
+    padding-top: 2rem;
+}
+@media (max-width: 480px) {
+    .containerCountries {
+        padding: 2rem 30px;
+    }
+    .search{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

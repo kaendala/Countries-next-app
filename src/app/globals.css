@@ -22,6 +22,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body{
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
 .light{
   --background-color: var(--light-gray);
   --font-color: var(--dark-text);
