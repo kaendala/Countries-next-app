@@ -314,7 +314,7 @@ interface Name {
 }
 
 interface NativeName {
-  srp: Srp;
+  srp?: Srp;
 }
 
 interface Srp {

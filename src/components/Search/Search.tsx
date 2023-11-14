@@ -21,7 +21,7 @@ const Search = ({ list, submit }: SearchProps) => {
       <input
         className={s.input}
         placeholder="Search for a country..."
-        data-testid="inputSearch"
+        id="inputSearch"
         onChange={(e) => change(e.currentTarget.value)}
       />
     </div>

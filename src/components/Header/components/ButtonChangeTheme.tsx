@@ -6,7 +6,7 @@ import s from './ButtonChangeTheme.module.scss';
 const ButtonChangeTheme=()=>{
     const {theme, changeTheme } = useThemeContext();
     return (
-        <div className={s.changeTheme} onClick={changeTheme}>
+        <div id="changeTheme" className={s.changeTheme} onClick={changeTheme}>
             {theme==='light'?<DarkMode/>: <Brightness5/>}
             <p className={s.text}>{theme ==='light'?'Dark':'Light'} Mode </p>
         </div>

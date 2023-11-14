@@ -10,7 +10,10 @@ const Borders = ({ codeList }: Bordersprops) => {
     const { list } = useCountriesContext()
     const names= codeList.map((code)=>list.find((country: Country)=> country.cca3===code)?.name.common || code)
     return (
-        <div className={s.borders}>{names.map((name, index)=><div key={`${name}-${index}`} className={s.name}>{name}</div>)}</div>
+        <div className={s.borders}>{names.map((name, index)=>(
+            <div key={`${name}-${index}`} className={s.name}>{name}</div>
+        ))}
+        </div>
     );
 };
 

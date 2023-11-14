@@ -22,8 +22,8 @@ export default function RootLayout({
       <body className={`${inter.className} light`}>
         <ThemeProvider>
           <CountriesProvider>
-          <Header></Header>
-          {children}
+            <Header></Header>
+            {children}
           </CountriesProvider>
         </ThemeProvider>
       </body>

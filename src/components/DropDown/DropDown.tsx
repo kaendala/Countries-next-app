@@ -23,6 +23,7 @@ const DropDown = ({ list, submit }: DropDownProps) => {
   return (
     <div className={s.dropDown}>
       <div
+        id="opener"
         className={s.opener} 
         onClick={() => setOpen(!open)}>
         <p>{regionSelected ? regionSelected : 'Filter by Region'}</p>
