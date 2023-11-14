@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
@@ -14,23 +14,60 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Country-app- Reto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este repositorio contiene el código fuente del reto realizado utilizando Next.js 13 con TypeScript, siguiendo una basada en el Atomic design. Se crearon los siguientes componentes: `Card`, `Dropdown`, `Header`,`Borders`, `CountriesList` y `Search`. Además, se implementaron dos páginas: `Home` y `Detail`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![desktop dark](./public/desktop-dark.PNG)
+![desktop light](./public/desktop-ligth.PNG)
+![mobile light](./public/mobile-light.PNG)
+![mobile dark](./public/mobile-dark.PNG)
 
-## Learn More
+## Tecnologías utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 13
+- TypeScript
+- next-themes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Componentes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Card
 
-## Deploy on Vercel
+El componente `Card` se encarga de renderizar una tarjeta con información relevante. Puede ser utilizado para mostrar detalles de un país, como su nombre, bandera, población, etc.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dropdown
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+El componente `Dropdown` es un menú desplegable que permite al usuario filtrar por la region.
+
+### Header
+
+El componente `Header` representa la cabecera de la página. contiene la opcion de cambiar de modo entre dark y light.
+
+### Search
+
+El componente `Search` es una barra de búsqueda que permite al usuario filtrar por el nombre del pais.
+
+## Páginas
+
+### Home
+
+La página `Home` muestra una lista de países. Cada país se representa mediante el componente `Card`. El usuario puede hacer clic en un país para ver más detalles en la página `Detail`.
+
+### Detail
+
+La página `Detail` muestra información detallada sobre un país específico. Recibe el ID del país como parámetro y muestra los detalles correspondientes.
+
+## Arquitectura
+
+Arquitectura de Componentes (Component-Based Architecture): Esta arquitectura se centra en la construcción de la aplicación mediante la composición de componentes reutilizables. Cada componente tiene su propio estado interno y lógica
+
+## Cómo ejecutar el proyecto
+
+1. Clona este repositorio: `git clone <URL del repositorio>`
+2. Navega al directorio del proyecto: `cd <nombre del directorio>`
+3. Instala las dependencias: `npm install`
+4. Inicia la aplicación: `npm run dev`
+5. Abre tu navegador y ve a `http://localhost:3000`
+
+¡Listo! Ahora puedes explorar la aplicación y ver los países en la página principal. Si haces clic en un país, podrás ver los detalles en la página de detalle.
+
