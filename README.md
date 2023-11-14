@@ -19,7 +19,7 @@ bun dev
 Este repositorio contiene el código fuente del reto realizado utilizando Next.js 13 con TypeScript, siguiendo una basada en el Atomic design. Se crearon los siguientes componentes: `Card`, `Dropdown`, `Header`,`Borders`, `CountriesList` y `Search`. Además, se implementaron dos páginas: `Home` y `Detail`.
 
 ![desktop dark](./public/desktop-dark.PNG)
-![desktop light](./public/desktop-ligth.PNG)
+![desktop light](./public/desktop-light.PNG)
 ![mobile light](./public/mobile-light.PNG)
 ![mobile dark](./public/mobile-dark.PNG)
 
@@ -27,7 +27,7 @@ Este repositorio contiene el código fuente del reto realizado utilizando Next.j
 
 - Next.js 13
 - TypeScript
-- next-themes
+
 
 ## Componentes
 
